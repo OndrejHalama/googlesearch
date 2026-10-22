@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="advanced-page">
+    <header class="advanced-header">
+        <a class="small-wordmark" href="index.html" aria-label="Google Search home">
+            <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+        </a>
+        <nav class="top-nav" aria-label="Search options">
+            <a href="index.html">Google Search</a>
+            <a href="forms.html">Form elements</a>
+        </nav>
+    </header>
+
+    <main class="advanced-main">
+        <h1>Advanced Search</h1>
+        <form action="https://www.google.com/search" method="get">
+            <section class="advanced-fields" aria-labelledby="find-pages">
+                <h2 id="find-pages">Find pages with...</h2>
+                <div class="advanced-row">
+                    <label for="all-words">all these words:</label>
+                    <input id="all-words" type="text" name="as_q">
+                </div>
+                <div class="advanced-row">
+                    <label for="exact-phrase">this exact word or phrase:</label>
+                    <input id="exact-phrase" type="text" name="as_epq">
+                </div>
+                <div class="advanced-row">
+                    <label for="any-words">any of these words:</label>
+                    <input id="any-words" type="text" name="as_oq">
+                </div>
+                <div class="advanced-row">
+                    <label for="none-words">none of these words:</label>
+                    <input id="none-words" type="text" name="as_eq">
+                </div>
+            </section>
+            <div class="advanced-submit">
+                <input type="submit" value="Advanced Search">
+            </div>
+        </form>
+    </main>
+    <footer class="site-footer">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fraw.githubusercontent.com%2FOndrejHalama%2Fgooglesearch%2Fmain%2Fadvanced_search.html">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fraw.githubusercontent.com%2FOndrejHalama%2Fgooglesearch%2Fmain%2Fstyles.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;lang=en">Validate CSS</a>
+        <a href="https://github.com/OndrejHalama/googlesearch/blob/main/citace.md">Citations</a>
+        <a href="https://ondrejhalama.github.io/portfolio/">Portfolio</a>
+    </footer>
+</body>
+</html>

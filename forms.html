@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Form Elements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="forms-page">
+    <header class="forms-header">
+        <a class="small-wordmark" href="index.html" aria-label="Google Search home">
+            <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+        </a>
+        <nav class="top-nav" aria-label="Search options">
+            <a href="index.html">Google Search</a>
+            <a href="image_search.html">Images</a>
+            <a href="advanced_search.html">Advanced Search</a>
+        </nav>
+    </header>
+
+    <main class="forms-main">
+        <h1>HTML Form Elements</h1>
+        <p>A showcase of common HTML form controls. This demo form does not submit data.</p>
+        <form class="controls-form" action="#" method="get" onsubmit="return false">
+            <fieldset>
+                <legend>Text and numbers</legend>
+                <div class="control-grid">
+                    <label for="text-input">Text
+                        <input id="text-input" type="text" placeholder="Enter text">
+                    </label>
+                    <label for="search-input-demo">Search
+                        <input id="search-input-demo" type="search" placeholder="Search">
+                    </label>
+                    <label for="email-input">Email
+                        <input id="email-input" type="email" placeholder="name@example.com">
+                    </label>
+                    <label for="password-input">Password
+                        <input id="password-input" type="password" placeholder="Password">
+                    </label>
+                    <label for="url-input">URL
+                        <input id="url-input" type="url" placeholder="https://example.com">
+                    </label>
+                    <label for="tel-input">Telephone
+                        <input id="tel-input" type="tel" placeholder="+1 555 0100">
+                    </label>
+                    <label for="number-input">Number
+                        <input id="number-input" type="number" min="0" max="100" value="10">
+                    </label>
+                    <label for="range-input">Range
+                        <input id="range-input" type="range" min="0" max="100" value="50">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dates, time, and color</legend>
+                <div class="control-grid">
+                    <label for="date-input">Date
+                        <input id="date-input" type="date">
+                    </label>
+                    <label for="datetime-input">Date and time
+                        <input id="datetime-input" type="datetime-local">
+                    </label>
+                    <label for="month-input">Month
+                        <input id="month-input" type="month">
+                    </label>
+                    <label for="week-input">Week
+                        <input id="week-input" type="week">
+                    </label>
+                    <label for="time-input">Time
+                        <input id="time-input" type="time">
+                    </label>
+                    <label for="color-input">Color
+                        <input id="color-input" type="color" value="#4285f4">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choices and files</legend>
+                <div class="control-grid">
+                    <label for="select-input">Select
+                        <select id="select-input">
+                            <option value="">Choose an option</option>
+                            <option value="one">Option one</option>
+                            <option value="two">Option two</option>
+                            <option value="three">Option three</option>
+                        </select>
+                    </label>
+                    <label for="multiple-select">Multiple select
+                        <select id="multiple-select" multiple size="3">
+                            <option value="alpha">Alpha</option>
+                            <option value="beta">Beta</option>
+                            <option value="gamma">Gamma</option>
+                        </select>
+                    </label>
+                    <label for="datalist-input">Datalist
+                        <input id="datalist-input" list="sample-options" placeholder="Choose or type">
+                        <datalist id="sample-options">
+                            <option value="HTML"></option>
+                            <option value="CSS"></option>
+                            <option value="JavaScript"></option>
+                        </datalist>
+                    </label>
+                    <label for="file-input">File
+                        <input id="file-input" type="file">
+                    </label>
+                </div>
+                <div class="choice-group">
+                    <span>Checkboxes</span>
+                    <label><input type="checkbox" name="topics" value="html"> HTML</label>
+                    <label><input type="checkbox" name="topics" value="css"> CSS</label>
+                    <label><input type="checkbox" name="topics" value="forms"> Forms</label>
+                </div>
+                <div class="choice-group">
+                    <span>Radio buttons</span>
+                    <label><input type="radio" name="level" value="beginner"> Beginner</label>
+                    <label><input type="radio" name="level" value="intermediate"> Intermediate</label>
+                    <label><input type="radio" name="level" value="advanced"> Advanced</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message and actions</legend>
+                <label for="message-input">Textarea
+                    <textarea id="message-input" rows="5" placeholder="Write a message"></textarea>
+                </label>
+                <input type="hidden" name="demo" value="hidden value">
+                <div class="form-actions">
+                    <button type="button">Regular button</button>
+                    <button type="submit">Submit button (demo only)</button>
+                    <button type="reset">Reset button</button>
+                    <input type="submit" value="Submit input (demo only)">
+                    <input type="reset" value="Reset input">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fraw.githubusercontent.com%2FOndrejHalama%2Fgooglesearch%2Fmain%2Fforms.html">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fraw.githubusercontent.com%2FOndrejHalama%2Fgooglesearch%2Fmain%2Fstyles.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;lang=en">Validate CSS</a>
+        <a href="https://github.com/OndrejHalama/googlesearch/blob/main/citace.md">Citations</a>
+        <a href="https://ondrejhalama.github.io/portfolio/">Portfolio</a>
+    </footer>
+</body>
+</html>

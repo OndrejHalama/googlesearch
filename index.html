@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="search-page">
+    <nav class="top-nav" aria-label="Search options">
+        <a href="image_search.html">Images</a>
+        <a href="advanced_search.html">Advanced Search</a>
+        <a href="forms.html">Form elements</a>
+    </nav>
+
+    <main class="search-main">
+        <a class="wordmark" href="index.html" aria-label="Google Search home">
+            <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+        </a>
+        <form class="search-form" action="https://www.google.com/search" method="get">
+            <label class="visually-hidden" for="query">Search</label>
+            <input class="search-input" id="query" type="text" name="q" autocomplete="off">
+            <div class="search-buttons">
+                <input type="submit" value="Google Search">
+                <input type="submit" name="btnI" value="I'm Feeling Lucky">
+            </div>
+        </form>
+    </main>
+    <footer class="site-footer">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fraw.githubusercontent.com%2FOndrejHalama%2Fgooglesearch%2Fmain%2Findex.html">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fraw.githubusercontent.com%2FOndrejHalama%2Fgooglesearch%2Fmain%2Fstyles.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;lang=en">Validate CSS</a>
+        <a href="https://github.com/OndrejHalama/googlesearch/blob/main/citace.md">Citations</a>
+        <a href="https://ondrejhalama.github.io/portfolio/">Portfolio</a>
+    </footer>
+</body>
+</html>
